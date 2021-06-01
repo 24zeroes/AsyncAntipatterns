@@ -56,6 +56,8 @@ namespace WebApplication
             app.UseAuthorization();
             
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+
+            SetThreadPoolSettings();
         }
 
         private void SetThreadPoolSettings()
